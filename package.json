@@ -1,6 +1,6 @@
 {
   "name": "kdu-template-es2015-compiler",
-  "version": "1.9.1-rc.0",
+  "version": "1.6.1",
   "description": "Post compiler for Kdu template render functions to support ES2015+ features",
   "main": "index.js",
   "author": "NKDuy",
@@ -10,18 +10,14 @@
     "buble.js"
   ],
   "scripts": {
-    "build": "cd buble && npm run build && copy dist\\buble-browser-deps.umd.js ..\\buble.js",
+    "build": "cd buble && npm run build && copy dist\\buble.deps.js ..\\buble.js",
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "jest": "^24.1.0",
-    "kdu": "^2.6.0-alpha.1",
-    "kdu-template-compiler": "^2.6.0-alpha.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kdujs/kdu-template-es2015-compiler"
+    "jest": "^21.2.1",
+    "kdu": "^2.5.0",
+    "kdu-template-compiler": "^2.5.0"
   },
   "jest": {
     "testPathIgnorePatterns": [
